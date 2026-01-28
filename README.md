@@ -24,7 +24,7 @@ O desenvolvimento foi estruturado em três iterações, refletindo o amadurecime
 * **Limitação:** Como não há delimitadores claros nem formato de saída especificado, o resultado é inconsistente (texto livre), o que impede o parsing automático por ferramentas de CI/CD.
 
 ### v2: Structured (Contexto e Instruções Explícitas)
-* **Abordagem:** Introdução de **Contexto**, **Instruções Explícitas** e **Few-Shot prompting**.
+* **Abordagem:** Introdução de **Contexto** e **Instruções Explícitas**.
 * **Raciocínio:** Para aumentar a precisão, foram definidos critérios fixos de severidade e tipos de análise. O uso de delimitadores ajuda o modelo a distinguir o que é instrução do que é o código do usuário.
 * **Ganho:** Redução da variabilidade e respostas mais alinhadas aos requisitos de SLA de um ambiente DevOps.
 
