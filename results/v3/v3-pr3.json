@@ -1,0 +1,13 @@
+{
+  "risco": "alto",
+  "decisao": "pedir mudanças",
+  "categoria": "custo",
+  "estimativa_custo": "A mudança de db.t3.medium para db.r6g.8xlarge combinada com aumento de storage de 100GB para 1TB pode elevar o custo mensal da instância RDS em várias vezes (ordem de milhares de USD/mês), além de custos adicionais de IOPS, backup e possível impacto em janela de manutenção.",
+  "acoes": [
+    "Justificar tecnicamente a necessidade do instance_class db.r6g.8xlarge (ex.: métricas de CPU, memória, conexões).",
+    "Avaliar alternativas de menor custo, como db.r6g.2xlarge ou db.r6g.4xlarge, ou uso de read replicas para carga de leitura.",
+    "Definir se o aumento é temporário (Black Friday) e planejar rollback automático após o período.",
+    "Validar impactos de performance e custo do aumento de allocated_storage para 1TB (IOPS, backups, snapshots).",
+    "Adicionar comentários ou variáveis no Terraform para deixar claro o racional e facilitar ajustes futuros."
+  ]
+}

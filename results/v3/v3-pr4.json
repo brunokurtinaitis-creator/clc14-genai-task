@@ -1,0 +1,11 @@
+{
+  "risco": "baixo",
+  "decisao": "aprovar",
+  "categoria": "boas práticas",
+  "estimativa_custo": "Não há impacto financeiro adicional. A inclusão da tag CostCenter apenas melhora a alocação e rastreamento de custos existentes em ferramentas de billing e relatórios da AWS. :contentReference[oaicite:0]{index=0}",
+  "acoes": [
+    "Verificar se a tag CostCenter segue o padrão oficial de nomenclatura definido pela organização.",
+    "Garantir que políticas de tagging (SCPs ou AWS Config Rules) estejam alinhadas para exigir a tag em todos os recursos.",
+    "Replicar a adição da tag CostCenter para outros recursos Terraform relacionados (ex.: volumes EBS, ASGs, ELBs) para consistência."
+  ]
+}

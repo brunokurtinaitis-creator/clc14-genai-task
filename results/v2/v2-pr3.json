@@ -1,0 +1,13 @@
+{
+  "risco": "alto",
+  "decisao": "nao_aprovar",
+  "categoria": "custo",
+  "estimativa_custo": "A mudança aumenta drasticamente o custo mensal do RDS ao migrar de db.t3.medium para db.r6g.8xlarge e elevar o armazenamento de 100 GB para 1 TB, podendo representar um aumento de dezenas de vezes na fatura mensal, especialmente se mantido após o período de Black Friday :contentReference[oaicite:0]{index=0}",
+  "acoes_sugeridas": [
+    "Justificar tecnicamente o dimensionamento (CPU, memória, IOPS) com base em métricas reais de carga",
+    "Avaliar um scale-up mais conservador (ex: r6g.xlarge ou r6g.2xlarge) ou uso temporário de autoscaling/leitura com réplicas",
+    "Definir plano de rollback ou redução automática após o pico de Black Friday",
+    "Adicionar alarmes de custo e performance para evitar sobreprovisionamento prolongado",
+    "Documentar o impacto financeiro esperado e obter aprovação explícita de stakeholders"
+  ]
+}

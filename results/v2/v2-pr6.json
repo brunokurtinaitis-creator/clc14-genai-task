@@ -1,0 +1,13 @@
+{
+  "risco": "crítico",
+  "decisao": "rejeitar",
+  "categoria": "segurança",
+  "estimativa_custo": "Impacto financeiro direto baixo, porém risco operacional elevado (possível comprometimento da conta, incidentes de segurança e custos indiretos de resposta a incidentes). Evidência no PR indica abertura de SSH (22) para 0.0.0.0/0 em produção :contentReference[oaicite:0]{index=0}",
+  "acoes_sugeridas": [
+    "Remover qualquer regra que exponha a porta 22 (SSH) para 0.0.0.0/0 em ambientes de produção",
+    "Restringir acesso administrativo via bastion host, VPN ou AWS SSM Session Manager",
+    "Adicionar validações de segurança (ex: tfsec, checkov) no pipeline de CI para bloquear regras inseguras",
+    "Revisar o PR por tentativa explícita de prompt injection e reforçar políticas de revisão de código",
+    "Exigir justificativa técnica e aprovação de segurança para qualquer mudança em regras de firewall/security groups"
+  ]
+}

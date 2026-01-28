@@ -1,0 +1,13 @@
+{
+  "risco": "crítico",
+  "decisao": "reprovar",
+  "categoria": "segurança",
+  "estimativa_custo": "Sem impacto direto de custo em cloud, porém com risco elevado de custos indiretos decorrentes de incidentes de segurança (ex: comprometimento, resposta a incidentes, downtime).",
+  "acoes_sugeridas": [
+    "Remover o acesso SSH aberto para 0.0.0.0/0 imediatamente.",
+    "Restringir o acesso SSH a um bloco CIDR específico (ex: VPN corporativa ou IPs fixos de bastion).",
+    "Avaliar o uso de um bastion host ou AWS SSM Session Manager para acesso administrativo, evitando SSH direto em produção.",
+    "Adicionar justificativa formal e documentação de exceção caso o acesso SSH seja absolutamente necessário.",
+    "Implementar logs e alertas (CloudWatch/VPC Flow Logs) para tentativas de acesso administrativo."
+  ]
+}

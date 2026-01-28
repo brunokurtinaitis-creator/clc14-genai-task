@@ -1,0 +1,14 @@
+{
+  "risco": "médio",
+  "decisao": "pedir mudanças",
+  "categoria": "segurança",
+  "estimativa_custo": "Custo baixo inicialmente (apenas armazenamento S3), porém pode crescer de forma imprevisível conforme volume de logs, já que não há lifecycle, retenção ou classe de armazenamento definida.",
+  "acoes": [
+    "Habilitar criptografia em repouso (SSE-S3 ou SSE-KMS).",
+    "Adicionar aws_s3_bucket_public_access_block para garantir que o bucket não seja exposto publicamente.",
+    "Configurar versionamento apenas se houver necessidade de auditoria; caso contrário, documentar a decisão.",
+    "Definir lifecycle rules para expiração ou transição de logs antigos para classes mais baratas (ex: Glacier).",
+    "Avaliar e definir política de bucket (IAM) restringindo acesso apenas aos serviços/roles necessários.",
+    "Adicionar logging ou métricas de acesso, se exigido por compliance ou auditoria."
+  ]
+}

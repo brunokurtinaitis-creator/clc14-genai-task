@@ -1,0 +1,12 @@
+{
+  "risco": "alto",
+  "decisao": "nao_aprovar",
+  "categoria": "boas_praticas",
+  "estimativa_custo": "Custo potencialmente elevado e imprevisível devido a uso de 3008 MB de memória sem timeout explícito. Em cenários de erro ou loop, a função pode ser invocada repetidamente e consumir tempo máximo padrão de execução (3s) sem atender aos requisitos de processamento, gerando retrabalho e aumento de invocações.",
+  "acoes_sugeridas": [
+    "Definir explicitamente o parâmetro Timeout com base no tempo máximo esperado de processamento.",
+    "Reavaliar o MemorySize (3008 MB) para verificar se está dimensionado corretamente ou superprovisionado.",
+    "Adicionar mecanismos de controle de erro e retries (ex: DLQ ou Lambda Destinations) para evitar execuções desnecessárias.",
+    "Documentar o comportamento esperado da função e seus limites operacionais no PR."
+  ]
+}

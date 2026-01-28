@@ -1,0 +1,13 @@
+{
+  "risco": "crítico",
+  "decisao": "rejeitar",
+  "categoria": "segurança",
+  "estimativa_custo": "Sem custo financeiro direto, porém alto custo potencial associado a incidentes de segurança, comprometimento de instâncias, resposta a incidentes e indisponibilidade de serviços.",
+  "acoes": [
+    "Remover imediatamente o acesso SSH aberto para 0.0.0.0/0 em ambientes de produção.",
+    "Restringir o acesso SSH a CIDRs específicos e confiáveis (ex.: VPN corporativa ou IPs fixos).",
+    "Avaliar o uso de AWS SSM Session Manager para acesso administrativo sem exposição de portas.",
+    "Implementar controles adicionais como MFA, bastion host ou jump box, se SSH for estritamente necessário.",
+    "Documentar e justificar formalmente qualquer exceção de acesso administrativo em produção."
+  ]
+}

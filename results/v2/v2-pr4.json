@@ -1,0 +1,12 @@
+{
+  "risco": "baixo",
+  "decisao": "aprovar",
+  "categoria": "boas práticas",
+  "estimativa_custo": "Nenhum impacto direto de custo. A adição da tag CostCenter não altera o consumo de recursos, mas melhora significativamente a capacidade de alocação e rastreamento de custos no médio e longo prazo.",
+  "acoes_sugeridas": [
+    "Padronizar a tag CostCenter em todos os recursos Terraform (EC2, RDS, S3, ELB, etc.)",
+    "Avaliar a criação de uma policy ou módulo Terraform que force tags obrigatórias (CostCenter, Owner, Environment)",
+    "Integrar o CostCenter com AWS Cost Explorer ou Budgets para relatórios e alertas de custo",
+    "Documentar o padrão de tagging adotado para evitar valores inconsistentes entre equipes"
+  ]
+}

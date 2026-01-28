@@ -1,0 +1,13 @@
+{
+  "risco": "médio",
+  "decisao": "aprovar com ressalvas",
+  "categoria": "segurança",
+  "estimativa_custo": "Custo inicial baixo, restrito ao armazenamento S3. Pode crescer de forma imprevisível dependendo do volume de logs e da ausência de políticas de retenção/lifecycle.",
+  "acoes_sugeridas": [
+    "Adicionar versionamento e criptografia no bucket (SSE-S3 ou SSE-KMS) para atender boas práticas de segurança em produção.",
+    "Definir uma política de lifecycle para expiração ou transição de logs antigos para classes mais baratas (ex: S3 Glacier).",
+    "Avaliar e configurar explicitamente o bloqueio de acesso público (public access block).",
+    "Considerar adicionar uma policy de bucket limitando acesso apenas aos serviços ou roles que escreverão os logs.",
+    "Avaliar se o nome do bucket deve ser parametrizado para evitar conflitos e facilitar reutilização entre ambientes."
+  ]
+}

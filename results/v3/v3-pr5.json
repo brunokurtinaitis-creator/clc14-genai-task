@@ -1,0 +1,12 @@
+{
+  "risco": "médio",
+  "decisao": "pedir mudanças",
+  "categoria": "boas práticas",
+  "estimativa_custo": "MemorySize elevado (3008 MB) combinado com possíveis execuções incompletas por timeout padrão de 3s pode gerar retrabalho, retries e aumento indireto de custo por invocações repetidas.",
+  "acoes": [
+    "Definir explicitamente o parâmetro Timeout de acordo com o tempo máximo esperado de processamento.",
+    "Reavaliar o MemorySize para o menor valor que atenda aos requisitos de performance.",
+    "Validar se a função necessita acesso direto a um endpoint de produção e, se possível, externalizar a configuração via parâmetros/Secrets Manager.",
+    "Adicionar documentação ou comentários explicando as escolhas de runtime, memória e timeout."
+  ]
+}
