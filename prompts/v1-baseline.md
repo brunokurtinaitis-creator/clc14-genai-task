@@ -1,0 +1,1 @@
+Instrução: Analise o Pull Request em anexo. Eu sou um engenheiro DevOps e preciso saber o nível de risco (crítico, alto, médio ou baixo), se devo aprovar a mudança, qual a categoria do problema (segurança, custo, compliance ou boas práticas), uma estimativa de custo e o que deve ser feito.
